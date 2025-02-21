@@ -8,6 +8,8 @@ import React from "react";
 import Navbar from "../components/navbar";
 import { BrowserRouter } from "react-router-dom";
 import { Homebox } from "../components/homebox";
+import { Footer } from "../components/footer";
+
 
 
 export default function App() {
@@ -18,10 +20,12 @@ export default function App() {
       <SignedOut>
         <Navbar login={<SignInButton />} />
         <Homebox />
+        <Footer />
       </SignedOut>
       <SignedIn>
             <Navbar login={<UserButton/>} />
             <Homebox />
+            <Footer />
       </SignedIn>
     </header>
     </BrowserRouter>

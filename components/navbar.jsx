@@ -16,6 +16,7 @@ export default function Navbar({ login, signup }) {
             <div className="flex space-x-6 text-gray-700">
                 <Link to={"/detect"} className="hover:text-blue-600">Detect Damage</Link>
                 <Link to={"/claim"} className="hover:text-blue-600">Claim Insurance</Link>
+                <Link to={"/claim"} className="hover:text-blue-600">Contact us</Link>
                 <Link to={"/"} className="hover:text-blue-600">{login}</Link>
             </div>
         </nav>
